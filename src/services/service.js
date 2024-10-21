@@ -4,7 +4,8 @@ import handleResponse from "../helper/handle-response";
 const paymentService = {
     pay,
     payCheck,
-	getAllUser
+	getAllUser,
+	getUsers
 };
 
 async function pay(payload) {
@@ -24,6 +25,13 @@ async function payCheck(txn_id) {
 async function getAllUser() {
 	return axios
 		.get("/getAllUser")
+		.catch(handleResponse)
+		.then((res) => res);
+}
+
+async function getUsers() {
+	return axios
+		.get("/getUsers")
 		.catch(handleResponse)
 		.then((res) => res);
 }
