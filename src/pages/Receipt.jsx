@@ -133,19 +133,7 @@ function Receipt() {
 							</span>
 							<br />
 						</div>
-						<hr />
-						<p style={{ margin: 0 }}>
-							Stay connected with me
-						</p>
-						<p className="text-center" style={{ margin: 0 }}>
-							<a
-								href="https://www.youtube.com/DarshanParmarK"
-								target="_blank"
-								className="social-link"
-							>
-								@darshankparmar
-							</a>
-						</p>
+						
 						<hr />
 						<Row className="tran-table-row my-2">
 							<Col className="tran-table-col-1">Payee Name</Col>

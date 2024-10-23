@@ -19,9 +19,9 @@ function Home() {
     {
       const payload = {};
       payload["amount"] = value.toString();
-      payload["customer_name"] = "Test";
-      payload["customer_email"] = "test1@gmail.com";
-      payload["customer_mobile"] = "9999999998";
+      payload["customer_name"] = "Bhushan Ghadi";
+      payload["customer_email"] = "bhushanghadi65@gmail.com";
+      payload["customer_mobile"] = "8645791203";
 
       paymentService.pay({ payload }).then((res) => {
         console.log(res);
