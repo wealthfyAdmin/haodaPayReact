@@ -17,17 +17,17 @@ function Home() {
     }
     else
     {
-      // const payload = {};
-      // payload["amount"] = value.toString();
-      // payload["customer_name"] = "Test";
-      // payload["customer_email"] = "test@gmail.com";
-      // payload["customer_mobile"] = "9999999999";
+      const payload = {};
+      payload["amount"] = value.toString();
+      payload["customer_name"] = "Bhushan Ghadi";
+      payload["customer_email"] = "bhushanghadi65@gmail.com";
+      payload["customer_mobile"] = "8645791203";
 
-      // paymentService.pay({ payload }).then((res) => {
-      //   console.log(res);
-      //   window.location.href = res.data.payment_url;
-      // });
-        window.location.href = 'https://qrstuff.me/gateway/pay/89e89973abf4adf517551ad1f527ff49';
+      paymentService.pay({ payload }).then((res) => {
+        console.log(res);
+        window.location.href = res.data.payment_url;
+      });
+        // window.location.href = 'https://qrstuff.me/gateway/pay/89e89973abf4adf517551ad1f527ff49';
     }
   }
 
